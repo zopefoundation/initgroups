@@ -16,7 +16,7 @@ from os.path import join
 from setuptools import setup, find_packages, Extension
 
 setup(name='initgroups',
-      version = '2.13.1dev',
+      version = '2.13.1.dev0',
       url='http://pypi.python.org/pypi/initgroups',
       license='ZPL 2.1',
       description="Convenience uid/gid helper function used in Zope2.",

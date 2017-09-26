@@ -12,4 +12,15 @@
 #
 ##############################################################################
 
-from _initgroups import initgroups
+import os
+import warnings
+
+
+_MESSAGE =(
+    "The standalone 'initgroups.initgroups' functinon is deprecated.  "
+    "Use 'os.initgroups' instead.")
+
+warnings.warn(_MESSAGE, DeprecationWarning)
+
+def initgroups(username, gid):
+    return os.initgroups(username, gid)

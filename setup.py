@@ -23,7 +23,7 @@ with open('CHANGES.rst') as f:
 
 setup(name='initgroups',
       version = '3.0.dev0',
-      url='http://pypi.python.org/pypi/initgroups',
+      url='https://github.com/zopefoundation/initgroups',
       license='ZPL 2.1',
       description="Convenience uid/gid helper function used in Zope2.",
       author='Zope Corporation and Contributors',

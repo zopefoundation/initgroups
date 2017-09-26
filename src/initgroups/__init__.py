@@ -20,8 +20,7 @@ _MESSAGE =(
     "The standalone 'initgroups.initgroups' functinon is deprecated.  "
     "Use 'os.initgroups' instead.")
 
-# We do not use DeprecationWarning because it is ignored by default.
-warnings.warn(_MESSAGE)
+warnings.warn(_MESSAGE, DeprecationWarning)
 
 def initgroups(username, gid):
     return os.initgroups(username, gid)

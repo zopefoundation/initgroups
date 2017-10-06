@@ -15,7 +15,7 @@
 from setuptools import setup, find_packages
 
 setup(name='initgroups',
-      version='3.0',
+      version='3.1.dev0',
       url='http://pypi.python.org/pypi/initgroups',
       license='ZPL 2.1',
       description="Convenience uid/gid helper function used in Zope2.",

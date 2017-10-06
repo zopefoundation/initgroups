@@ -12,25 +12,35 @@
 #
 ##############################################################################
 
-from os.path import join
-from setuptools import setup, find_packages, Extension
+from setuptools import setup, find_packages
 
 setup(name='initgroups',
-      version = '2.14.0.dev0',
+      version='3.0',
       url='http://pypi.python.org/pypi/initgroups',
       license='ZPL 2.1',
       description="Convenience uid/gid helper function used in Zope2.",
       author='Zope Corporation and Contributors',
       author_email='zope-dev@zope.org',
-      long_description=open('README.txt').read() + '\n' +
-                       open('CHANGES.txt').read(),
+      long_description=(open('README.rst').read() + '\n' +
+                        open('CHANGES.rst').read()),
 
       packages=find_packages('src'),
       package_dir={'': 'src'},
-      ext_modules=[Extension(
-            name='initgroups._initgroups',
-            sources=[join('src', 'initgroups', '_initgroups.c')],
-            ),
+      classifiers=[
+          "Development Status :: 6 - Mature",
+          "Environment :: Web Environment",
+          "Framework :: Zope2",
+          "License :: OSI Approved :: Zope Public License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
       ],
       include_package_data=True,
       zip_safe=False,

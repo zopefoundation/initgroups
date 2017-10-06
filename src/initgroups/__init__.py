@@ -12,4 +12,4 @@
 #
 ##############################################################################
 
-from _initgroups import initgroups
+from os import initgroups  # NOQA

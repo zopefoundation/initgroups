@@ -22,7 +22,7 @@ with open('CHANGES.rst') as f:
     CHANGES = f.read()
 
 setup(name='initgroups',
-      version='4.0.dev0',
+      version='4.0',
       url='https://github.com/zopefoundation/initgroups',
       license='ZPL 2.1',
       description="Convenience uid/gid helper function used in Zope2.",

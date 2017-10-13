@@ -1,7 +1,7 @@
 Changelog
 =========
 
-4.0 (unreleased)
+4.0 (2017-10-13)
 ----------------
 
 - Deprecate entire package: ``os.initgroups`` is part of the standard
